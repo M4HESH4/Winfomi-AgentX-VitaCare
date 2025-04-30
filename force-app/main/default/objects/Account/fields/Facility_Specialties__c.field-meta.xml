@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Facility_Specialties__c</fullName>
+    <label>Facility Specialties</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Diabetes &amp; Endocrine Disorders</fullName>
+                <default>false</default>
+                <label>Diabetes &amp; Endocrine Disorders</label>
+            </value>
+            <value>
+                <fullName>Ear, Nose &amp; Throat</fullName>
+                <default>false</default>
+                <label>Ear, Nose &amp; Throat</label>
+            </value>
+            <value>
+                <fullName>Heart &amp; Heart Surgery</fullName>
+                <default>false</default>
+                <label>Heart &amp; Heart Surgery</label>
+            </value>
+            <value>
+                <fullName>Orthopedics</fullName>
+                <default>false</default>
+                <label>Orthopedics</label>
+            </value>
+            <value>
+                <fullName>Physical Therapy</fullName>
+                <default>false</default>
+                <label>Physical Therapy</label>
+            </value>
+            <value>
+                <fullName>Cancer</fullName>
+                <default>false</default>
+                <label>Cancer</label>
+            </value>
+            <value>
+                <fullName>Geriatric Care</fullName>
+                <default>false</default>
+                <label>Geriatric Care</label>
+            </value>
+            <value>
+                <fullName>Urology</fullName>
+                <default>false</default>
+                <label>Urology</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

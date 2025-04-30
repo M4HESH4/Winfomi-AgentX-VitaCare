@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataStreamDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <areHeadersIncludedInFile>false</areHeadersIncludedInFile>
+    <bulkIngest>false</bulkIngest>
+    <creationType>Custom</creationType>
+    <dataConnector>MessagingEventsWhatsApp_6706ee67_5633_4ef7_9f61_de90055a775e</dataConnector>
+    <dataConnectorType>IngestApi</dataConnectorType>
+    <dataPlatformDataSetItemName>INGESTAPI</dataPlatformDataSetItemName>
+    <dataSource>UWhatsAppProd__MessagingEventsWhatsApp_6706ee67_5633_4ef7_9f61_de90055a775e</dataSource>
+    <isLimitedToNewFiles>false</isLimitedToNewFiles>
+    <isMissingFileFailure>false</isMissingFileFailure>
+    <masterLabel>MessagingEventsWhatsApp-WhatsappEngagement</masterLabel>
+    <mktDataLakeObject>UWhatsAppProd__MessagingEventsWhatsApp_Whatsap_9061A271__dll</mktDataLakeObject>
+    <mktDataTranObject>UWhatsAppProd__MessagingEventsWhatsApp_Whatsap_9061A271</mktDataTranObject>
+</DataStreamDefinition>

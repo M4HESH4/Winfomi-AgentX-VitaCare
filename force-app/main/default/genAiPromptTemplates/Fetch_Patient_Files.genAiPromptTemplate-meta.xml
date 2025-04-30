@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>wSCdBEpib16fd7Hy3UIZFH86Ls/8vzHc3C4lHAwDJXI=_1</activeVersionIdentifier>
+    <description>Query and retrieve the patient&apos;s relevant medical records from patient record, including vitals, observations, and care plans. This data can be used to assess the patient&apos;s condition and take appropriate next steps</description>
+    <developerName>Fetch_Patient_Files</developerName>
+    <masterLabel>Fetch Patient Files</masterLabel>
+    <templateVersions>
+        <content>As a patient&apos;s care taker, based on Phone Number in {!$Input:Input_Query}, query and retrieve all relevant patient files, records, and related data including medical history, recent observations, care plans, and any existing reports from {!$EinsteinSearch:Default_Account_with_Attachments_Retriever_1Cx_kXL6c23b067.results}
+
+Provide the retrieved files or summaries of relevant records in a clear and concise manner.
+
+Follow the below mentioned instruction before giving the output:
+1. Ensure all patient data pulled is relevant to the current query, such as recent vitals, medications, or follow-up history.
+2, Do not search over the internet for information. If you are unable to get the appropriate patient&apos;s files, say &quot;Unable to fetch patient files.&quot;
+</content>
+        <inputs>
+            <apiName>Input_Query</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Input Query</masterLabel>
+            <referenceName>Input:Input_Query</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/Default_Account_with_Attachments_Retriever_1Cx_kXL6c23b067</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Input_Query}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:Default_Account_with_Attachments_Retriever_1Cx_kXL6c23b067</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>wSCdBEpib16fd7Hy3UIZFH86Ls/8vzHc3C4lHAwDJXI=_1</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>
