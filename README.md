@@ -1,18 +1,8 @@
-# Salesforce DX Project: Next Steps
+This repository contains metadata, templates, automation flows, and integration configurations for the VitaCare Agent use case. It supports patient symptom tracking, preventive advice, data retrieval, and care coordination workflows integrated with Salesforce Health Cloud.
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
-
-## How Do You Plan to Deploy Your Changes?
-
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
-
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+Features
+- Patient Symptom Tracking: Captures and analyzes patient-reported symptoms like dizziness, fatigue, etc.
+- Preventive Advice: Provides actionable advice for non-critical symptoms based on medical guidelines.
+- Data Retrieval: Fetches relevant patient files (e.g., vitals, observations, care plans) to determine the next course of action.
+- Care Coordination: Automates follow-up tasks and escalations to care coordinators when needed.
+- Integration: Integrated with Salesforce Health Cloud, WhatsApp, and Slack for real-time communication and patient engagement.This repository contains metadata, templates, automation flows, and integration configurations for the VitaCare Agent use case. It supports patient symptom tracking, preventive advice, data retrieval, and care coordination workflows integrated with Salesforce Health Cloud.
